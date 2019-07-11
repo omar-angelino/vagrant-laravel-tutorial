@@ -1,0 +1,4 @@
+/vendor
+/.vagrant
+/tutorials
+composer.lock

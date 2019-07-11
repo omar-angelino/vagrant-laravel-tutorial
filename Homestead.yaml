@@ -1,0 +1,26 @@
+ip: 192.168.10.11
+memory: 1024
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: './tutorial_1'
+        to: /home/vagrant/tutorial_1
+sites:
+    -
+        map: tutorial.dev
+        to: /home/vagrant/tutorial/public
+databases:
+    - homestead
+features:
+    -
+        mariadb: true
+    -
+        ohmyzsh: false
+    -
+        webdriver: false
+name: vagrant-laravel-box
+hostname: vagrant-laravel-box
